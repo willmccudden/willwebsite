@@ -1,0 +1,49 @@
+.footer {
+    display: flex;
+    background-color: #e7ebe6;
+    color: black;
+    padding: 2em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer li {
+    list-style: none;
+    padding-top: 1rem;
+}
+
+.footer a {
+    font-family: Manrope;
+    text-decoration: none;
+    color: black;
+}
+
+.footer div {
+    text-align: left;
+    font-family: Manrope;
+    text-decoration: none;
+    color: black;
+    font-size: small;
+}
+
+.footer a:hover {
+    color: white;
+}
+
+.footer h3 {
+    font-family: Manrope;
+    text-decoration: none;
+    color: black;
+    font-size: x-large;
+    margin: 0;
+}
+
+.col {
+    padding-right: 7rem;
+    padding-left: 3rem;
+}

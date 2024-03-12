@@ -1,0 +1,2 @@
+const HomePageText3 = `Recently migrated to Sydney. I'm looking to continue my journey in the tech industry. I'm developing my skills as a front end developer while I search for job opportunities`; 
+ export default HomePageText3;
