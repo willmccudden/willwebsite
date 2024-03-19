@@ -1,25 +1,21 @@
 
-import HeroSection from '../../Components/HeroSection/HeroSection';
 import { HomePageSlide } from '../../Components/HomePageSlide/HomePageSlide';
 import './HomePage.css'
 import HomePageText1 from '../../Components/HomePageSlide/HomePageText1';
 import HomePageText2 from '../../Components/HomePageSlide/HomePageText2';
 import HomePageText3 from '../../Components/HomePageSlide/HomePageText3';
 import { Reveal } from '../../Components/UtilComponents/Reveal';
-import styled from 'styled-components';
 import NavBar from '../../Components/NavBar/NavBar';
-import { View } from 'react-native-web';
 import UniversityPhoto from '../../Images/UniversityPhoto.jpg'
 import IBMLogo from '../../Images/IBMLogo.png'
 import SurfingPhoto from '../../Images/SurfingPhoto.jpg'
 import HeroPhoto from '../../Images/HeroPhoto.jpg'
-import { useState } from 'react';
 
 
 function HomePage() {
 
     return (
-        <div>
+        <div className='background'>
             <div className='container'>
                 <div className='navbar-grid'>
                     <NavBar />

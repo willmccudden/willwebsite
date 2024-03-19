@@ -20,7 +20,7 @@ const Footer = () => {
                         </a>
                     </li>
                     <li>
-                        <a href='https://github.com/willmccudden/will_website' target='_blank'>
+                        <a href='https://github.com/willmccudden/willwebsite' target='_blank'>
                             Github
                         </a>
                     </li>

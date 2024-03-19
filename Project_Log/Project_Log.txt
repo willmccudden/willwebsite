@@ -1,0 +1,70 @@
+30th January 2024 - 
+
+Currently I'm working on ticket WW-2 which is just the creation of the home page. In reality I'm just refreshing and improving 
+my knowledge of React, Javascript, CSS and HTML. Today I spent my time figuring out how to use flexboxes so I could have a profile
+photo next to my bio only to realise that if I want my website to look proffesional then I want to have a hero section so 
+creating that will be my next task. Nevertheless I started to gain a better understanding of
+the 'react-native' and 'styled-components' libraries and today I'll push the code up to git for the first time since
+the react app was initialised. I'll attach a photo for what the website currently looks like. For now I will be writing the
+log entries here on a txt file in the hope that I can write some code that will parse these entries into a more presentable format
+for the website and then maybe create the functionality within the website to write log entries and have them stored on a database.
+
+2nd Febuary 2024 - 
+
+I've made my hero section using styled-components. It's mainly taken from an article: https://medium.com/@ryaddev/creating-a-stunning-hero-section-in-react-with-styled-components-e84d060f6cdc
+but I've made changes and will continue to make changes to it. I've left the previous home page still underneath the hero section. I'll
+add a new photo here with the decsription that I want to add to the home page. Forgive the silly photo that comes with the log here. I'm happy with 
+the basics. The home page just needs more styling, the download CV button must work and then I just need to finish the text on and its done.
+
+7th Febuary 2024 - 
+
+The website Home Page is really taking shape. I've primarily been focussed on styling and making the website look
+appealing. The Hero Section photo has changed and instead of a single profile photo with one long paragraph of
+text I've added multiple photos and enlarged the text to give brief descriptions of the stages of my life. This is after looking
+at other good examples of personal websites. I've also been using the google fonts library to imprive the text and I created my own Favicon/Logo here:
+https://favicon.io/favicon-generator/
+
+8th Febuary 2024 - 
+Today I've added the animation for each of the home page slides. Mainly based on a video here: https://www.youtube.com/watch?v=hjbxaYTMhy0
+
+13th Febuary 2024 - 
+I've decided to move on from working on the Home page. I think it looks good enough for now, more changes are definitely required to make it look as proffesional as possible
+but I also don't want to get tied up constantly adjusting it. I've moved on to the Navbar. For now, it will only contain links to the Home Page and the Work Log. I don't think it'll
+take more than a day. You can see from the image it will be there on the right hand side of the Hero Section. I just need to look into how react Router Dom works and then I'll either start
+on the work log page or the footer. I'm happy with my progress though and I'm excited to get the website up and running.
+
+19th Febuary 2024 - 
+
+The Navbar is completed up to the standard that I would like and I've added the router components so that the Navbar now links to a basic Project Log
+page. I've also started on the footer but the functional links and styling needs to be added to this. I decided I'm going to do the project log with a 
+simple mongo DB database for now. I remember that you can create one that is free to host and can be called easily with a React project. This is mainly
+just so that I can write these project logs through the website rather than in a txt file. I may have to migrate the mongo database at a future date. I'm very eager
+to get the website up and running and functional so I can put it on my CV. Hence, after I push the project up today I'll be hosting it with Github pages 
+for now. This won't be the long term solution it'll just be nice to get it up. Otherwise, the project needs a lot of boring house cleaning work. The file
+structure is not great and I'm sure there's lots of wasteful code. I'm going to create an Epic on the Jira project 'House Keeping' to be a continous ticket 
+for any of that sort of work that needs doing throughout the project. 
+
+I'll also take the time now to envision what I want for the Work Log. I don't think it'll be big on styling, just a simple page that can list all of these logs.
+One feature that I really like the idea of is a button for each log that opens a modal window to the images for that log. A potential issue is where to store the images.
+I'd like to be able to upload them through the website so a list of local images isn't a possibility. I'm also not sure what the limit is on storage in the free mongoDB 
+database. This is an issue I'll have to tackle soon.
+
+One last thing, I'm becoming more and more concious of how the website displays on different decives/ screens. I connected a monitor to my laptop today and the display is very different
+and I haven't even checked to see what it looks like on a phone. I'll check this in a moment once the website is being hosted!
+
+22nd Febuary 2024 -
+
+So the website is up and running with netlify on willmccudden.com . It's deploying straight from my git repo so I'll start using seperate branches soon and only deploy from the main branch.
+I've made the decision to use the MERN stack for the application. So the back end will be done through the express.js and the database will be mongoDB. This is primarily for
+ease of use. I've created a MERN stack application once before and I know it's easy and free to use. In today's commit I've restructured codebase to add a backend file for managing the project Log page.
+Although after attending a networking/presentation event in Sydney hosted by Cover Genius on Django and I'm tempted to use that for my back end when the applications I work on for the website
+get more complex. It's appealing as I'm also keen to improve my python knowledge.
+
+Lastly, I've also cleaned up the folder structure and it's looking much better, I've removed some unnecessary code (the ImageComponent which I'm realsing was very silly).
+I've added a little to the Footer but am still unsure how to get this looking how I want it. I've also decided the hero section photo will now be fixed to the back of the entire home page
+but will blur with scroll (I'm hoping I can do this with framer motion).
+
+20 March 2023 - 
+
+I spent the majority of last week working on the website backend which I will be doing in express.js. I've added all the project log entries here into a free MongoDB database with the values 'textEntry' for the actual text, 'date' for the date it was written and 'hasPhoto' for if the entry is accompanied by a photo. As you can see from the photo, the project log is very basic but at least the text entries here are being pulled from the mongodb database and are not stored locally. I'm still not sure how I'll do the photo functionality. I think it may be a case of storing the photos in the front end repo and calling them locally. I also had to copy the whole project into a new repo as I was having trouble with hosting the front end and the back end from the git repo but that's all sorted now. All that is left to do is, host the back end, style the project log and improve styling so the page is presented better on mobile devices.
+

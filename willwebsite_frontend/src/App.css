@@ -1,6 +1,9 @@
-
 body {
     background-color: white;
     padding: 0;
     margin: 0;
+    background-image: url("../src/Images/HeroPhoto.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }

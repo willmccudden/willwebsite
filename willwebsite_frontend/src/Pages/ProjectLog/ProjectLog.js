@@ -1,14 +1,46 @@
 import NavBar from "../../Components/NavBar/NavBar";
+import { useState, useEffect } from 'react';
+import axios from 'axios';
+import './ProjectLog.css'
 
-function WorkLog() {
+function ProjectLog() {
+
+    const [projectLogs, setProjectLogs] = useState([]);
+
+    useEffect(() => {
+        fetchProjectLogs();
+    }, [])
+
+    const fetchProjectLogs = async () => {
+        try {
+            const res = await axios.get("http://localhost:3001/projectlog");
+            console.log(res);
+            setProjectLogs(res.data.projectLog);
+        } catch (err) {
+            console.log(err);
+        }
+    }
+
     return (
-        <div>
-        <h1>
-            Project Log
-        </h1>
-        <NavBar/>
+        <div className="background">
+            <NavBar />
+            <h1>
+                Project Log
+            </h1>
+            <div className="projectLog">
+                <ol>
+
+                    {projectLogs.map((projectLog) => (
+                        <li>
+                            {projectLog.textEntry}
+                        </li>
+                    ))}
+                </ol>
+            </div>
+
+
         </div>
     )
 }
 
-export default WorkLog;
+export default ProjectLog;
