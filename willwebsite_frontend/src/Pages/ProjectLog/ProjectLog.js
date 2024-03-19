@@ -13,7 +13,7 @@ function ProjectLog() {
 
     const fetchProjectLogs = async () => {
         try {
-            const res = await axios.get("http://localhost:3001/projectlog");
+            const res = await axios.get("https://willwebsite.onrender.com/projectlog");
             console.log(res);
             setProjectLogs(res.data.projectLog);
         } catch (err) {
