@@ -4,12 +4,11 @@ const cors = require('cors');
 
 const connectToDb = require('./config/connectToDb');
 const projectLogController = require("./controllers/projectLogController");
+const corsOptions = require('./config/corsOptions');
 
 const app = express();
 app.use(express.json());
-app.use(cors({
-    origin: "https://willwebsite.onrender.com"
-}));
+app.use(cors(corsOptions));
 
 connectToDb();
 
