@@ -1,9 +1,23 @@
-body {
-    background-color: white;
-    padding: 0;
-    margin: 0;
-    background-image: url("../src/Images/HeroPhoto.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+@media screen and (min-width: 500px) {
+    body {
+        background-color: white;
+        padding: 0;
+        margin: 0;
+        background-image: url("../src/Images/HeroPhoto.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+}
+
+@media screen and (min-width: 200px) {
+    body {
+        background-color: white;
+        padding: 0;
+        margin: 0;
+        background-image: url("../src/Images/HeroPhoto.jpg");
+        background-repeat: no-repeat;
+        /* background-attachment: fixed;
+        background-size: cover; */
+    }
 }

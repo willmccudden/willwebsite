@@ -15,19 +15,20 @@ const Pane = styled.div`
     padding: 1em;
 `;
 
-
-
-
 export function HomePageSlide(props) {
     const [left, right] = props.children;
 
     return (
         <Container>
             <Pane weight={props.leftWeight}>
-                {left}
+                <div className='homepage-slide-image'>
+                    {left}
+                </div>
             </Pane>
             <Pane weight={props.rightWeight}>
-                {right}
+                <div className='homepage-slide-text'>
+                    {right}
+                </div>
             </Pane>
         </Container>
     )

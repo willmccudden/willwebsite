@@ -1,4 +1,3 @@
-const HomePageText1 = `B.Sc. Mathematics and M.Sc. Computer Science from the University of Birmingham in the UK
-specialising in Java, SQL and C++.`; 
+const HomePageText1 = `At my core, I am an ardent problem solver. This passion led me to pursue a Bachelor's degree in Mathematics. Later, fueled by a curiosity for the technical domain, I transitioned to an MSc in Computer Science, immersing myself in data structures, algorithms, and artificial intelligence. The pinnacle of my time at university was my Masters project where I set myself the task of independently mastering C++ to construct a secure server-client file storage system. This achievement epitomized my profound love for tackling complex problems.`
 
 export default HomePageText1;

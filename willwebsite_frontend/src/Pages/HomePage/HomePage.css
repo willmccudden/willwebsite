@@ -1,71 +1,58 @@
-p {
-    color: white;
-    font-family: Manrope;
-    font-size: 30px;
-    text-align: center;
-    vertical-align: middle;
-}
+@media screen and (min-width: 500px) {
+    h1 {
+        color: white;
+        font-family: Oswald;
+        font-size: 50px;
+        text-align: center;
+    }
 
-h1 {
-    color: white;
-    font-family: Oswald;
-    font-size: 50px;
-    text-align: center;
-}
+    .slide-text {
+        color: black;
+        font-family: Manrope;
+        font-size:larger;
+        vertical-align: middle;
+    }
 
-.slide-text {
-    color: white;
-    font-family: Manrope;
-    font-size: 30px;
-    text-align: center;
-    vertical-align: middle;
-}
+    .lines {
+        font-family: Manrope;
+    }
 
-.lines {
-    font-family: Manrope;
-}
+    .slide-image {
+        max-width: 100%;
+        height: auto;
+        width: auto\9;
+    }
 
-.slide-image {
-    max-width: 100%;
-    height: auto;
-    width: auto\9;
-}
 
-/* body {
-  background-image: url("../../Images/HeroPhoto.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-} */
+    .background {
+        background-image: url("../../Images/HeroPhoto.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
 
-.background {
-  background-image: url("../../Images/HeroPhoto.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-}
+    .container {
+        display: grid;
+        grid-template-rows: [row1-start] 25vw [row2-start] 25vw;
+    }
 
-.container{
-    display: grid;
-    grid-template-rows: [row1-start] 25vw [row2-start] 25vw;
-}
+    .navbar-grid {
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
 
-.navbar-grid{
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
+    .title-grid {
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
 
-.title-grid{
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
-
-h2{
-    font-weight: 900;
-    color: white;
-    font-size: clamp(3rem, 8vw, 5rem);
-    font-family: Manrope;
-    line-height: 1.2;
-    margin-bottom: 1.5rem;
-    align-items: left
+    h2 {
+        font-weight: 900;
+        color: white;
+        font-size: clamp(3rem, 8vw, 5rem);
+        font-family: Manrope;
+        line-height: 1.2;
+        margin-bottom: 1.5rem;
+        align-items: left
+    }
 }

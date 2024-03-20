@@ -2,6 +2,7 @@ import NavBar from "../../Components/NavBar/NavBar";
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import './ProjectLog.css'
+import { ProjectLogEntry } from "../../Components/ProjectLogEntry/ProjectLogEntry";
 
 function ProjectLog() {
 
@@ -28,14 +29,10 @@ function ProjectLog() {
                 Project Log
             </h1>
             <div className="projectLog">
-                <ol>
 
                     {projectLogs.map((projectLog) => (
-                        <li>
-                            {projectLog.textEntry}
-                        </li>
+                        <ProjectLogEntry pLogEntry = {projectLog.textEntry} pLogDate = {projectLog.date}/>
                     ))}
-                </ol>
             </div>
 
 

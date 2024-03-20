@@ -1,3 +1,3 @@
-const HomePageText2 = `Two and a half years at IBM on the Scottish Government Welfare project. Responsible for story estimation, code reviews, writing my own unit tests and being in close communication with Business Analysts and testers to deliver high quality code.`; 
+const HomePageText2 = `During my 3-year tenure at IBM, I was deeply deployed to the Scottish Government Welfare project. My duties encompassed contributing to story estimation sessions, ensuring the delivery of high-quality, resilient code accompanied by comprehensive unit tests, and engaging in effective communication and presentations with business analysts, testers, and product owners. This experience ignited my fervor for the technical domain and the developer role, as I firmly believe no other position could provide the same level of gratification taken from the problem-solving process and the fulfillment of delivering a finished product.`; 
 
 export default HomePageText2;

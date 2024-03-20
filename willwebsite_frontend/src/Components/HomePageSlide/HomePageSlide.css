@@ -6,3 +6,15 @@
 .show {
     opacity: 1;
 }
+
+.homepage-slide-text {
+    margin: 20px;
+    background-color: white;
+    opacity: 0.7;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.homepage-slide-image {
+    border-radius: 10px;
+}
