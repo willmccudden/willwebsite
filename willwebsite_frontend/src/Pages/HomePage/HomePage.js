@@ -10,9 +10,7 @@ import UniversityPhoto from '../../Images/UniversityPhoto.jpg'
 import IBMLogo from '../../Images/IBMLogo.png'
 import SurfingPhoto from '../../Images/SurfingPhoto.jpg'
 
-
 function HomePage() {
-
     return (
         <div className='background'>
             <div className='container'>
