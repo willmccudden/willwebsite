@@ -28,7 +28,7 @@ const Footer = () => {
             <div className='col'>
                 <h3> Contact </h3>
                     <li>
-                        <div>0424528691</div>
+                        <div>+447711795017 (Whatsapp)</div>
                     </li>
                     <li>
                         <div>willmccudden@gmail.com</div>
